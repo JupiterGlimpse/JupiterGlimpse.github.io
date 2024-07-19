@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JupiterGlimpse</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:  serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            background-color: #2a53ccf4;
+            align-items: center;
+            justify-content: center;
+        }
+        .left {
+            flex: 1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .left a {
+            display: block;
+            margin: 20px 0;
+            color: white;
+            text-decoration: underline; /* 添加下划线 */
+            font-size: 24px;
+        }
+        .left p {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle {
+            background-color: #fdeba0;
+            width: 80vh; /* 调整圆的宽度 */
+            height: 50vh; /* 调整圆的高度，确保是正圆 */
+            padding-top: 40%;
+            border-radius: 100%;
+            position: relative;
+            right: 80px; /* 距离右边边缘的固定值 */
+            text-align: center;
+        }
+        .circle img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 220px;
+        }
+        .circle p {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            color: rgb(22, 26, 26);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <a href="photo.html">📷 Photo</a> <!-- 添加链接到photos.html -->
+            <a href="blog.html">🤾‍♀️ Blog</a> <!-- 添加链接到blogs.html -->
+            <p>Share my journey with you💗...</p>
+        </div>
+        <div class="right">
+            <div class="circle">
+                <img src="index_ava.JPG" alt="ava">
+                <p>Jupiter</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
